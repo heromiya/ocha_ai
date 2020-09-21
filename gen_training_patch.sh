@@ -2,15 +2,12 @@ echo "### BEGIN $0 $(date +'%F_%T')"
 
 export PATH=$PATH:$HOME/anaconda3/bin
 
-export SHPDIR=$1
-export MASKDIR=$2
-export RASDIR=$3
-export PATMASKDIR=$4
-export PATRASDIR=$5
-export PATCH_SIZE=$6
-export N_PATCH=$7
-export B_NB_RATIO=$8
-export GADM=$9
+export MASKDIR=$1
+export RASDIR=$2
+export PATMASKDIR=$3
+export PATRASDIR=$4
+export PATCH_SIZE=$5
+export N_PATCH=$6
 
 #for TIF in $(find "$RASDIR" -type f | grep -e ".*\.png$" -e ".*\.tif$"); do
 function gen_patch() {
